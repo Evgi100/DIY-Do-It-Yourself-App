@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button (click)="onNewRecipe()"   class=" btn btn-success">New Recipe</button>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+      <!-- The recipe attribute bind the recipe from recipe-item to each iteration of the recipes array  -->
+            <app-recipe-item *ngFor="let recipeElement of recipes;let i=index" [recipe]='recipeElement' [index]="i" ></app-recipe-item>
+    </div>
+</div>
+
