@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "engines": {
-    "node": "6.11.1",
-    "npm": "3.10.9"
+    "node": "9.4.0",
+    "npm": "5.6.0"
   },
   "scripts": {
     "ng": "ng",
@@ -40,9 +40,9 @@
   "devDependencies": {
     "@angular/language-service": "^5.0.0",
     "@types/jasmine": "~2.5.53",
-    "@types/jasminewd2": "~2.0.2",
+    "@types/jasmine's2": "~2.0.2",
     "@types/node": "~6.0.60",
-    "codelyzer": "^4.0.1",
+    "modeler": "^4.0.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -53,6 +53,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
-    "tslint": "~5.7.0",
+    "tslint": "~5.7.0"
   }
 }
