@@ -1,5 +1,5 @@
 
-import {Ingredient} from '../shared/Ingredient.model'
+import {Ingredient} from '../Shared/Ingredient.model'
 
 export class Recipe {
 
