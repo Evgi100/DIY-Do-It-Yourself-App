@@ -2,13 +2,16 @@
   "name": "recipe-book-app",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "6.11.1",
+    "npm": "3.10.9"
+  },
   "scripts": {
     "ng": "ng",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod",
     "start": "node server.js"
   },
   "private": true,

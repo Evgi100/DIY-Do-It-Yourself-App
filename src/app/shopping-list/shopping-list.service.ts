@@ -11,8 +11,8 @@ ingrredintsChange= new Subject<Ingredient[]>()
 ingredientEdit= new Subject<number>()
 
    private ingredients:Ingredient[]=[
-        new Ingredient('Apples',5),
-        new Ingredient('Tomatoes',7)
+        new Ingredient('Coffe mugs',2),
+        new Ingredient('Pebbles',7)
         
       ];
 

@@ -1,3 +1,40 @@
 h1 {
     color: darkblue;
 }
+
+.header-box{
+    text-align: center;
+    color: darkblue;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.705)),url("diy.png");
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 31rem;
+}
+
+.header-box_text{
+    color:#F8F8F8;
+    position:absolute;
+    top:30%;
+    left:20%;
+}
+
+@media only screen and (max-width:769px){
+
+    .header-box_text{
+        top:30%;
+        left:9%;
+    }
+}
+
+@media only screen and (max-width:469px) {
+    .header-box{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.705)),url("mobile_background.jpg");
+        background-position:77%;
+        background-repeat:no-repeat;
+    }
+
+    .header-box_text{
+        top:60%;
+        left:1%;
+    }
+}

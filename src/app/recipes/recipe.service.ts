@@ -16,14 +16,14 @@ export class RecipeService {
 
 
     private recipes: Recipe[] = [
-        new Recipe('Paleo Pad-Thai', 'Pad-Thai Paleo way', 'https://d39ziaow49lrgk.cloudfront.net/wp-content/uploads/2015/08/Paleo-Sweet-Potato-Pad-Thai-Recipe.jpg?x16148', [
-            new Ingredient('Paleo', 1),
-            new Ingredient('Pad-thai', 20)
+        new Recipe('Tea or Coffee Cup with a Message', 'Grab a teacup and a Sharpie marker, write a message on the inside bottom of a cup (or on the side of it), and bake for 30 min at 350 F to make the writing permanent. Great for bridal party gifts!', 'https://cdn-media-1.lifehack.org/wp-content/files/2013/01/Sharpie-Tea-Cups.jpg', [
+            new Ingredient('Sharpie marker', 1),
+            new Ingredient('Mugs', 20)
         ]),
 
-        new Recipe('THE PERFECT BURGER', 'Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it.', 'https://imagesvc.timeincapp.com/v3/mm/image?url=http%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fclassic-burgers-u.jpg%3Fitok%3DPEgZ0zic&w=800&q=85', [
-            new Ingredient('Buns', 2),
-            new Ingredient('Meat', 1)
+        new Recipe('Pebble Placemat', 'Use a hot glue gun to glue flat beach pebbles to circles of felt or wood. These placemats are perfect to use beneath teapots and warm serving bowls, and they look great at garden parties.', 'https://cdn-media-2.lifehack.org/wp-content/files/2013/01/Pebble-Placemat.jpg', [
+            new Ingredient('Hot glue gun', 2),
+            new Ingredient('Pebbles', 1)
         ])
     ];
 

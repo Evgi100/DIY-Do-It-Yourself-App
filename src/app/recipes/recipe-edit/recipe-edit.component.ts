@@ -15,7 +15,7 @@ import{Router} from '@angular/router'
 export class RecipeEditComponent implements OnInit {
   id: number;
   editMode = false;
-  recipeForm: FormGroup
+  recipeForm: FormGroup;
 
   constructor(private router: ActivatedRoute,
     private recipeService: RecipeService,
@@ -35,11 +35,11 @@ export class RecipeEditComponent implements OnInit {
     let recipeName = '';
     let recipeImgUrl = '';
     let recipeDescription = '';
-    let recipeIngredients = new FormArray([]);
+    const recipeIngredients = new FormArray([]);
     if (this.editMode) {
       const recipe = this.recipeService.getRecipe(this.id)
       recipeName = recipe.name;
-      recipeImgUrl = recipe.imagePath
+      recipeImgUrl = recipe.imagePath;
       recipeDescription = recipe.description;
       if (recipe['ingredients']) {
         for (let ingredient of recipe.ingredients) {
@@ -47,7 +47,7 @@ export class RecipeEditComponent implements OnInit {
             'name': new FormControl(ingredient.name, Validators.required),
             'amount': new FormControl(ingredient.amount, Validators.required)
           })
-          )
+          );
         }
       }
     }

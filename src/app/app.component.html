@@ -3,14 +3,17 @@
 (shoppingListClicked)="onNavigateList($event)"
 ></app-header> -->
 <app-header></app-header>
+<div class="header-box">
+    <h3 class="header-box_text">Keep all your DIY ideas/projects in one easy to manage place</h3>
+</div>
 <hr>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
             <!-- <app-recipes *ngIf="view==='recipe'" ></app-recipes>
              <app-shopping-list *ngIf="view !=='recipe'" ></app-shopping-list> -->
-             <!-- Here angular renders the routes component -->
-             <router-outlet></router-outlet>
+            <!-- Here angular renders the routes component -->
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>

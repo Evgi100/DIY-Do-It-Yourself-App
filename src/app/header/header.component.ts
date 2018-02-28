@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeService } from '../recipes/recipe.service';
 import { Recipe } from '../recipes/recipe.model'
-import{Response} from '@angular/http'
+import { Response } from '@angular/http'
 import { AuthService } from '../auth/auth.service';
 
 @Component({
@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
 
     // The @Output enables to listen to the event from other components
     recipes: Recipe[] = []
-    constructor(private recipeService: RecipeService,private authService:AuthService) {
+    constructor(private recipeService: RecipeService, public authService: AuthService) {
     }
     ngOnInit() {
 
@@ -23,17 +23,17 @@ export class HeaderComponent implements OnInit {
 
     onSave() {
         this.recipeService.storeRecipes(this.recipeService.getRecipes())
-        .subscribe(
-            (response:Response)=>console.log(response),
-            (error)=> console.log(error)
-        )
+            .subscribe(
+                (response: Response) => console.log(response),
+                (error) => console.log(error)
+            )
     }
 
     onFetch() {
         this.recipeService.fetchRecipes()
     }
 
-    onLogout(){
+    onLogout() {
         this.authService.logout();
     }
 
