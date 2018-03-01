@@ -23,15 +23,9 @@ const appRoutes:Routes=[
     {path:'signin',component:SigninComponent},
     {path:'recipes',component:RecipesComponent,children:[{path:'',component:RecipeHeaderComponent},
     // ** Important notice that the new route comes before the dynamic paramater otherwise angular 
-    {path:'new',component:RecipeEditComponent,},
+    {path:'new',component:RecipeEditComponent},
     {path:':id',component:RecipeDetailComponent},
-    {path:':id/edit',component:RecipeEditComponent}, 
-    
-    
-    // {path:'**',redirectTo:'/not-found'},
-    // {path:'**',redirectTo:'/not-found'},
-    
-    
+    {path:':id/edit',component:RecipeEditComponent} ]}, 
   ];
 
 //   The NgModule makes the component modulare
