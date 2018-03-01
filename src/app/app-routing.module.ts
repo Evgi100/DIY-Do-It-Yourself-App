@@ -17,11 +17,11 @@ import {AuthGuard} from './auth/auth-guard.service'
 
 
 const appRoutes:Routes=[
-    {path:'' ,redirectTo:'/recipes',pathMatch:'full'} ,
+    {path:'' ,redirectTo:'/projects',pathMatch:'full'} ,
     {path:'shopping-list',component: ShoppingListComponent}, 
     {path:'signup',component:SignupComponent},
     {path:'signin',component:SigninComponent},
-    {path:'recipes',component:RecipesComponent,children:[{path:'',component:RecipeHeaderComponent},
+    {path:'projects',component:RecipesComponent,children:[{path:'',component:RecipeHeaderComponent},
     // ** Important notice that the new route comes before the dynamic paramater otherwise angular 
     {path:'new',component:RecipeEditComponent},
     {path:':id',component:RecipeDetailComponent},
